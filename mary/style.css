@@ -1,0 +1,75 @@
+/*Font style*/
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap');
+body{
+    font-family: 'Open Sans';
+font-style: normal;
+}
+/*navigation and logo*/
+.btn-content{
+    background-color: #FD6E0A;
+    border-width: 0;
+    width: 150px;
+    height: 64px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn-gap{
+    justify-content: space-between;
+}
+.header{
+    font-size: 20px;
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFF8F3;
+}
+.header>h1{
+    font-weight: 800;
+}
+
+.header>h1>span{
+    color: #FD6E0A;
+}
+
+.header-nav-list{
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+/*main body*/
+.main{
+    padding-left: 80px;
+    padding-right: 80px;
+    background-image: url(image/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.person-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.person-details div>h3{
+    font-weight: 600;
+    font-size: 45px;
+}
+.person-details div>h1{
+    font-weight: 700;
+    font-size: 85px;
+}
+.person-details div>p{
+    font-weight: 400;
+    font-size: 18px;
+}
+.person-details .hardy{
+    max-width: 584px;
+    max-height: 676px;
+}  
