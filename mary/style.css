@@ -5,7 +5,8 @@ body{
     font-family: 'Open Sans';
 font-style: normal;
 }
-/*navigation and logo*/
+
+/*all button*/
 .btn-content{
     background-color: #FD6E0A;
     border-width: 0;
@@ -14,62 +15,119 @@ font-style: normal;
     color: white;
     font-size: 20px;
     border-radius: 10px;
+    transition: .5s;
 }
-.btn-gap{
-    justify-content: space-between;
+.btn-content:hover{
+    background-color: #b85813;
+    color: #ffffff;
+    transition: .5s;
 }
+
+
+/*navigation and logo*/
+
 .header{
-    font-size: 20px;
-    display: flex;
+    background-image: url(image/header_bg.png);
+    background-repeat: no-repeat;
+    background-color: #FFF8F3;
     padding-left: 80px;
     padding-right: 80px;
-    padding-top: 20px;
+    background-position: bottom right;
+}
+.navigation{
     align-items: center;
     justify-content: space-between;
+    display: flex;
     background-color: #FFF8F3;
 }
-.header>h1{
+header>div>h1{
     font-weight: 800;
+font-size: 45px;
 }
-
-.header>h1>span{
+header>div>h1>span{
     color: #FD6E0A;
 }
-
 .header-nav-list{
+    display: flex;
     text-decoration: none;
     list-style: none;
-    display: flex;
     gap: 60px;
     align-items: center;
 }
 
-/*main body*/
-.main{
-    padding-left: 80px;
-    padding-right: 80px;
-    background-image: url(image/header_bg.png);
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
-.person-details{
+.banner{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.person-details div>h3{
+.banner-hi{
     font-weight: 600;
     font-size: 45px;
 }
-.person-details div>h1{
+.banner-person-name{
     font-weight: 700;
     font-size: 85px;
 }
-.person-details div>p{
+.banner-person-paragraph{
     font-weight: 400;
     font-size: 18px;
 }
-.person-details .hardy{
-    max-width: 584px;
-    max-height: 676px;
-}  
+
+/*main section*/
+.main{
+    padding-right: 80px;
+    padding-left: 80px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+/*about section*/
+.about{
+    padding: 130px;
+    margin: 130px 0;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF8F3;
+    
+}
+.content-peragraph{
+
+    font-weight: 400;
+    font-size: 18px;
+}
+.content-name{
+    font-weight: 700;
+    font-size: 35px;
+
+}
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.contact>div>p{
+    font-size: 20px;
+}
+.contact>div .peragraph{
+    font-weight: 800;
+}
+
+.contact-text{
+    font-size: 100;
+}
+
+/*work section*/
+.work{
+    text-align: center;
+    align-items: center;
+}
+.work-name{
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-div{
+    background-color: aqua;
+    text-align: none;
+    gap: 5px;
+}
