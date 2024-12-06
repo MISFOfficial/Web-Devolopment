@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    height: 13vh;
+}
+.header .logo>i{
+    width: 200px;
+    font-size: 3vw;
+}
+.nev{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-left: 300px;
+}
+.nev-bar{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.navigation{
+    list-style: none;
+    
+}
+.navigation>a{
+    text-decoration: none;
+}
+.sign{
+    padding-left: 50px;
+}
