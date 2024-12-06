@@ -11,6 +11,8 @@ body{
     backdrop-filter: blur(3px);
     height: 100vh;
     font-family: "Oxygen", sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .header{
@@ -26,7 +28,13 @@ body{
 }
 .logo>i{
     color: aquamarine;
+    transition-duration: .3s;
 }
+.logo>i:hover{
+    color: orange;
+    transition-duration: .3s;
+}
+
 .nev{
     display: flex;
     align-items: center;
@@ -57,13 +65,16 @@ body{
 
 .navigation>a:hover{
     color: rgb(251, 255, 0);
-    transition: .5s;
+    transition: .3s;
 }
 
 main{
-    display: flex;
     justify-content: space-around;
     color: white;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    
 }
 
 .login {
@@ -76,7 +87,6 @@ main{
 font-size: 60px;
 font-weight: 800;
 }
-
 .login>p {
 padding-bottom: 50px;
 font-size: large;
@@ -84,15 +94,15 @@ font-size: 15px;
 }
 
 .button {
-color: white;
+color: rgb(0, 0, 0);
 padding: 10px 20px;
 width: 10vw;
 height: 7vh;
 font-size: 16px;
 cursor: pointer;
-border: 5px solid aqua;
+border: 0px;
 border-radius: 30px;
-background-color: transparent;
+background-color: aquamarine;
 font-weight: 600;
 transition: .3s;
 }
@@ -103,15 +113,63 @@ border: 0px;
 font-weight: 600;
 transform: scale(1.1);
 transition: .3s;
-
+color: black;
 }
 
 
 .partision{
-background-color: aqua;
+background-color: aquamarine;
 width: 5px;
 height: 74vh;
-margin-right: 80px;
+margin-right: 200px;
 border-radius: 50px;
 }
 
+.sign-dev{
+    text-align: center;
+}
+.create{
+    font-size: 60px;
+    font-weight: 800;
+}
+.icon{
+    font-size: 25px;
+    
+}
+.icon>a>i{
+   margin: 0 20px;
+   color: aquamarine;
+   transition: .3s;
+}
+
+.icon>a>i:hover{
+    color: orange;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.rg-text{
+    font-size: 15px;
+}
+.rg-text>span{
+    color: orange;
+}
+
+.input{
+    align-items: center;
+    height: 50px;
+    width: 18vw;
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 76px;
+}
+
+::placeholder{
+    padding-left: 20px;
+}
+.sign-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
