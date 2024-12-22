@@ -100,13 +100,21 @@ main{
     padding-left: 80px;
     padding-right: 80px;
 }
-
+.profile{
+    display: flex;
+}
 .text{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-
+.text>h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+.text>h1>span{
+    color: yellow;
+}
 .name{
     color: black;
     font-size: 18px;
@@ -128,4 +136,30 @@ main{
     font-weight: 600;
 }
 
+.icon{
+    display: flex;
+    gap: 30px;
+}
+.icon>a>i{
+    color: white;
+    font-size: 30px;
+}
+.img-back{
+    width: 400px;
+    height: 400px;
+    background: #007BFF;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: animate 7s ease-in-out infinite;
+}
+.image{
+    width: 400px;
+    object-fit: cover;
+}
 
+@keyframes animate {
+    50%{
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
