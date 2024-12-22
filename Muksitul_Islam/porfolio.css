@@ -29,13 +29,15 @@ header{
 .logo{
     color: white;
     text-decoration: none;
-    font-weight: 800;
     transition: .5s;
+}
+.logo>img{
+    height: 60px;
 }
 .logo>div{
     background-color: yellow;
     height: 3px;
-    width: 30px;
+    width: 20px;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -95,13 +97,35 @@ main>img{
 
 main{
     color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     padding-left: 80px;
     padding-right: 80px;
 }
 
-main>div>p{
-    width: 500px;
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
+.name{
+    color: black;
+    font-size: 18px;
+    background-color: yellow;
+    width: 6.3vw;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.cv{
+    text-decoration: none;
+    color: rgb(249, 248, 248);
+    font-size: 18px;
+    background-color: rgb(102, 102, 243);
+    width: 6.3vw;
+    padding: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+
