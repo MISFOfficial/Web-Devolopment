@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+/* ----- POPPINS FONT Link ----- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 
 body{
@@ -6,10 +7,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    font-family: "Josefin Sans", serif;
-    font-optical-sizing: auto;
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    font-style: normal;
 }
 header{
     display: flex;
@@ -48,6 +47,7 @@ header{
     list-style: none;
     color: white;
     transition: .5s;
+    font-weight: 600;
 }
 
 .navigation:hover{
@@ -55,46 +55,13 @@ header{
     transition: .5s;
     color: yellow;
 }
-
-
-
-.button {  
-    border: 2px solid transparent;  
-    padding: 10px 20px;  
-    position: relative;  
-    overflow: hidden;  
-    color: #fff;  
-    background-color: #007BFF;  
-    text-decoration: none;  
-    transition: color 0.4s;  
-}  
-
-.button::before {  
-    content: '';  
-    position: absolute;  
-    top: 0;  
-    left: 0;  
-    width: 100%;  
-    height: 100%;  
-    background-color: rgba(255, 255, 255, 0.2);  
-    transform: scale(0);  
-    transition: transform 0.4s;  
-    z-index: 0;  
-}  
-
-.button:hover::before {  
-    transform: scale(1);  
-}  
-
-.button:hover {  
-    color: #007BFF;  
-}   
+ 
 
 
 main>img{
     height: 90vh;
 }
-
+/*Porfile section*/
 main{
     color: white;
     padding-left: 80px;
@@ -102,6 +69,8 @@ main{
 }
 .profile{
     display: flex;
+    justify-content: space-around;
+    margin-top: 12vh;
 }
 .text{
     display: flex;
@@ -112,48 +81,85 @@ main{
     font-size: 50px;
     font-weight: 800;
 }
-.text>h1>span{
+.auto-type{
+    text-transform: capitalize;
     color: yellow;
 }
+
+.text>p{
+    width: 800px;
+    text-align: justify;
+}
 .name{
+    text-decoration: none;
     color: black;
-    font-size: 18px;
-    background-color: yellow;
-    width: 6.3vw;
-    padding: 10px;
-    border-radius: 10px;
-    font-weight: 600;
+    font-size: 15px;
+    font-weight: 400;
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 25px;
+    border-radius: 8px;
 }
 
 .cv{
     text-decoration: none;
-    color: rgb(249, 248, 248);
-    font-size: 18px;
-    background-color: rgb(102, 102, 243);
-    width: 6.3vw;
-    padding: 20px;
-    border-radius: 20px;
-    font-weight: 600;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    background: #007BFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.cv:hover{
+    background: yellow;
+    color: black;
+    transform: scale(1.1);
 }
 
 .icon{
     display: flex;
     gap: 30px;
+    margin-top: 30px;
+}
+.icon>a{
+    text-decoration: none;
 }
 .icon>a>i{
-    color: white;
     font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(255, 255, 255,255);
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+.icon>a>i:hover{
+    transform: scale(1.1);
+    color: yellow;
 }
 .img-back{
-    width: 400px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
     background: #007BFF;
     border-radius: 55% 45% 55% 45%;
     overflow: hidden;
-    animation: animate 7s ease-in-out infinite;
+    animation: animate 5s ease-in-out infinite;
 }
 .image{
-    width: 400px;
+    width: 450px;
     object-fit: cover;
 }
 
