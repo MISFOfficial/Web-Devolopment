@@ -16,14 +16,14 @@ header{
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
-    font-size: 30px;
+    font-size: 150%;
     backdrop-filter: blur(3px);
     height: 10vh;
     background-attachment: fixed;
 }
 .nav-ul{
     display: flex;
-    gap: 50px;
+    gap: 30px;
 }
 .logo{
     color: white;
@@ -31,12 +31,12 @@ header{
     transition: .5s;
 }
 .logo>img{
-    height: 60px;
+    height: 5vh;
 }
 .logo>div{
     background-color: yellow;
-    height: 3px;
-    width: 20px;
+    height: .5vh;
+    width: 30%;
 }
 .logo:hover{
     transform: scale(1.1);
@@ -77,7 +77,7 @@ main{
   flex-direction: column;
 }
 .text>h1{
-    font-size: 50px;
+    font-size: 300%;
     font-weight: 800;
 }
 .auto-type{
@@ -86,14 +86,14 @@ main{
 }
 
 .text>p{
-    width: 800px;
+    width: 46vw;
     text-align: justify;
 }
 .name{
     text-decoration: none;
     color: black;
-    font-size: 15px;
-    font-weight: 400;
+    font-size: 86%;
+    font-weight: 600;
     background: yellow;
     display: flex;
     justify-content: center;
@@ -106,14 +106,14 @@ main{
 .cv{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 100%;
     font-weight: 800;
     background: #007BFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 50px;
+    width: 10vw;
+    height: 5vh;
     border-radius: 10px;
     transition: .5s;
 }
@@ -127,13 +127,13 @@ main{
 .icon{
     display: flex;
     gap: 30px;
-    margin-top: 30px;
+    margin-top: 5%;
 }
 .icon>a{
     text-decoration: none;
 }
 .icon>a>i{
-    font-size: 30px;
+    font-size: 150%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +153,7 @@ main{
     width: 450px;
     height: 450px;
     background: #007BFF;
-    border-radius: 55% 45% 55% 45%;
+    border-radius: 45% 55% 45% 55%;
     overflow: hidden;
     animation: animate 5s ease-in-out infinite;
 }
@@ -164,7 +164,23 @@ main{
 
 @keyframes animate {
     50%{
-        transform: translateY(10px);
-        border-radius: 45% 55% 45% 55%;
+        transform: translateY(3%);
+        border-radius: 55% 45% 55% 45%;
     }
 }
+
+
+@media only screen and (max-width: 1411px) {
+    .profile {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 100px;
+    }
+    .text{
+    
+        align-items: center;
+    }
+
+}
+
