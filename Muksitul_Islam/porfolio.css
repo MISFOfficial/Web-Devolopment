@@ -155,7 +155,7 @@ main{
     width: 450px;
     height: 450px;
     background: #007BFF;
-    border-radius: 45% 55% 45% 55%;
+    border-radius: 55% 45% 55% 45%;
     overflow: hidden;
     animation: animate 5s ease-in-out infinite;
 }
@@ -164,10 +164,40 @@ main{
     object-fit: cover;
 }
 
+
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    background: #141414;
+ 
+}
+.foot{
+    color: white;
+}
+
+.foot>div>.m-name{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.copyright{
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+
 @keyframes animate {
     50%{
-        transform: translateY(3%);
-        border-radius: 55% 45% 55% 45%;
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
     }
 }
 
@@ -247,6 +277,7 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-top: 0px;
     }
     .text>h1{
         font-size: 20px;
