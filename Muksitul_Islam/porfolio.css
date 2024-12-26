@@ -165,6 +165,7 @@ main{
 }
 
 footer{
+    margin-top: 200px;
     padding-bottom: 50px;
     background: #141414;
     color: white;
@@ -174,15 +175,46 @@ footer{
 .contact{
     color: white;
     display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+    margin-bottom: 100px;
 }
 .text-2{
     width: 600px;
     text-align: justify;
 }
-
+.location{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    
+}
 .cont-2{
     display: flex;
     flex-direction: column;
+    margin-left: 50px;
+    gap: 5px;
+}
+.title{
+    font-weight: 800;
+    font-size: larger;
+}
+
+.cont-2>a{
+    text-decoration: none;
+    color: white;
+}
+
+.line-align{
+    display: flex;
+    justify-content: center;
+}
+.line{
+    background: white;
+    height: .5px;
+    width: 800px;
+    margin-bottom: 50px;
+    
 }
 
 .footer-section{
