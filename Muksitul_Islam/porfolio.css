@@ -164,15 +164,34 @@ main{
     object-fit: cover;
 }
 
-
+footer{
+    padding-bottom: 50px;
+    background: #141414;
+    color: white;
+}
 
 /*footer*/
-footer{
+.contact{
+    color: white;
+    display: flex;
+}
+.text-2{
+    width: 600px;
+    text-align: justify;
+}
+
+.cont-2{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-section{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
     background: #141414;
+    color: white;
  
 }
 .foot{
