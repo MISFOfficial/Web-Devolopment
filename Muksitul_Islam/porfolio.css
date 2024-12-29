@@ -164,14 +164,18 @@ main{
     object-fit: cover;
 }
 
-footer{
-    margin-top: 200px;
-    padding-bottom: 50px;
-    background: #141414;
-    color: white;
-}
 
 /*footer*/
+footer{
+    background-image: url(img/sep09.jpg);
+    background-size: cover;
+    margin-top: 200px;
+    padding-bottom: 50px;
+    color: white;
+    background-repeat: no-repeat;
+   
+}
+
 .contact{
     color: white;
     display: flex;
@@ -222,12 +226,16 @@ footer{
     align-items: center;
     justify-content: center;
     padding-bottom: 50px;
-    background: #141414;
     color: white;
  
 }
 .foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     color: white;
+    text-align: center;
 }
 
 .foot>div>.m-name{
@@ -279,6 +287,18 @@ footer{
         width: 300px;
     }
 
+    footer{
+        padding-left: 50px;
+       
+    }
+    .contact{
+       gap: 0px;
+       padding-right: 50px;
+    }
+    .text-2{
+        width: 400px;
+    }
+
 }
 
 
@@ -311,9 +331,28 @@ footer{
     .image{
         width: 300px;
     }
+
+    footer{
+        padding-left: 50px;
+       
+    }
+    .contact{
+       gap: 0px;
+       padding-right: 50px;
+    }
+
+    .line-align{
+        opacity: 100;
+    }
+    .line {
+        width: 300px;
+    }
+    .text-2{
+        width: 300px;
+    }
 }
 
-@media only screen and (max-width: 425px){
+@media only screen and (max-width: 426px){
     header{
         padding-left: 40px;
         padding-right: 0px;
@@ -335,6 +374,7 @@ footer{
     }
     .text>p{
         width: 300px;
+        text-align: center;
     }
     .img-back{
         width: 150px;
@@ -343,6 +383,40 @@ footer{
     .image{
         width: 150px;
     }
+
+    footer{
+        padding-left: 0px;
+        
+    }
+    .contact{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .cont-1{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-2{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .m-name{
+        margin-bottom: 0px;
+    }
+    .icon>a>i{
+        margin-top: 30px;
+        font-size: 22px;
+        width: 30px;
+        height: 30px;
+        
+    
+    }
+    
 }
 
 @media only screen and (max-width: 320px){
@@ -352,5 +426,4 @@ footer{
     .text>p{
         width: 250px;
     }
-
 }
