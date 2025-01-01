@@ -174,46 +174,60 @@ main{
     display: flex;
 }
 .back-color{
-    background: rgb(40, 40, 40);
     width: 80vw;
     height: 60vh;
     border-radius: 50px;
     animation: autoshowanimation both;
-    animation-timeline: view(100% 30%);
+    animation-timeline: view(80% 5%);
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
-
+    box-shadow: 0px 0px 1px 1px rgb(255, 255, 255);
 }
+@keyframes autoshowanimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(.01);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+   
+}
+.back-color {
+    animation-delay: 5s;
+}
+
 .marg{
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     gap: 100px;
+    align-items: center;
 }
 .bio{
     display: flex;
     flex-direction: column;
     width: auto;
 }
+.bio>div{
+    display: flex;
+    justify-content: center;
+}
 
 .marg>img{
     width: 400px;
     height: 400px;
-    border-radius: 100% 100% 50% 50%;
+    border-radius: 100% 100% 100% 50%;
+    transform: scaleX(-1);
+    
+    
 }
 
-@keyframes autoshowanimation{
-    from{
-        opacity: 0;
-        transform: translateY(200px) scale(.5);
-    }
-    to{
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
+
+
 
 /*footer*/
 footer{
@@ -381,6 +395,23 @@ footer{
     .image{
         width: 300px;
     }
+
+/*<!--thers section-->*/
+    .back-color{
+        height: 80vh;
+    }
+    .marg{
+        display: flex;
+        flex-direction: column;
+    }
+    .marg>img{
+        width: 200px;
+        height: 200px;
+    }
+
+
+
+
 /*footer*/
     footer{
         padding-left: 50px;
@@ -420,9 +451,10 @@ footer{
         margin-top: 0px;
     }
     .text>h1{
-        font-size: 20px;
+        font-size: 15px;
     }
     .text>p{
+        font-size: 15px;
         width: auto;
         text-align: center;
     }
@@ -433,6 +465,32 @@ footer{
     .image{
         width: 150px;
     }
+
+    .cv{
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+    }
+
+/*<!--thers section-->*/
+    .back-color{
+        height: 95vh;
+    }
+    .marg{
+        gap: 0px;
+    }
+    .marg>img{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px 100px
+        50px 50px ;
+    }
+    .bio>p{
+        text-align: center;
+    }
+
+
+
 /*footer*/
     footer{
         padding-left: 0px;
@@ -471,7 +529,7 @@ footer{
     
 }
 
-@media only screen and (max-width: 320px){
+@media only screen and (max-width: 375px){
     .text>h1{
         font-size: 15px;
     }
