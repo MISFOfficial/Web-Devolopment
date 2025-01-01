@@ -165,6 +165,56 @@ main{
 }
 
 
+
+/*<!--thers section-->*/
+.other{
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    justify-content: center;
+    display: flex;
+}
+.back-color{
+    background: rgb(40, 40, 40);
+    width: 80vw;
+    height: 60vh;
+    border-radius: 50px;
+    animation: autoshowanimation both;
+    animation-timeline: view(100% 30%);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+
+}
+.marg{
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    gap: 100px;
+}
+.bio{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+}
+
+.marg>img{
+    width: 400px;
+    height: 400px;
+    border-radius: 100% 100% 50% 50%;
+}
+
+@keyframes autoshowanimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(.5);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 /*footer*/
 footer{
     background-image: url(img/sep09.jpg);
@@ -286,7 +336,7 @@ footer{
     .image{
         width: 300px;
     }
-
+/*footer*/
     footer{
         padding-left: 50px;
        
@@ -316,7 +366,7 @@ footer{
         font-size: 30px;
     }
     .text>p{
-        width: 600px;
+        width: auto;
     }
     .cv{
         display: flex;
@@ -331,7 +381,7 @@ footer{
     .image{
         width: 300px;
     }
-
+/*footer*/
     footer{
         padding-left: 50px;
        
@@ -348,7 +398,7 @@ footer{
         width: 300px;
     }
     .text-2{
-        width: 300px;
+        width: auto;
     }
 }
 
@@ -373,7 +423,7 @@ footer{
         font-size: 20px;
     }
     .text>p{
-        width: 300px;
+        width: auto;
         text-align: center;
     }
     .img-back{
@@ -383,9 +433,10 @@ footer{
     .image{
         width: 150px;
     }
-
+/*footer*/
     footer{
         padding-left: 0px;
+        padding-right: 0px;
         
     }
     .contact{
@@ -396,13 +447,14 @@ footer{
     }
     .cont-1{
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        width: auto;
+        margin-left: 50px;
     }
     .text-2{
         text-align: center;
         justify-content: center;
         align-items: center;
+        width: auto;
     }
 
     .m-name{
@@ -424,6 +476,6 @@ footer{
         font-size: 15px;
     }
     .text>p{
-        width: 250px;
+        width: auto;
     }
 }
