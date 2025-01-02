@@ -20,6 +20,8 @@ header{
     backdrop-filter: blur(3px);
     height: 10vh;
     background-attachment: fixed;
+    position: sticky;
+    top: 0;
 }
 .nav-ul{
     display: flex;
@@ -237,7 +239,20 @@ main{
     display: flex;
     flex-direction: column;
     gap: 50px;
+    animation: exp both;
+    animation-timeline: view(80% 20%);
 }
+@keyframes exp{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.1);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
 .experiance>h1{
     text-align: center;
     font-size: 30px;
@@ -272,7 +287,7 @@ main{
     color: black;
     font-size: 100%;
     font-weight: 800;
-    background: rgb(88, 208, 255);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -467,7 +482,14 @@ footer{
         width: 200px;
         height: 200px;
     }
-
+    .bio>div>a{
+        width: 200px;
+    }
+    /*experiance*/
+    .Check{
+        width: 100px;
+        font-size: 15px;
+    }
 
 
 
@@ -547,7 +569,14 @@ footer{
     .bio>p{
         text-align: center;
     }
-
+ /*experiance*/
+    .experiance>h1{
+        font-size: 20px;
+    }
+    .work{
+        font-size: 15px;
+        text-align: center;
+    }
 
 
 /*footer*/
@@ -594,5 +623,10 @@ footer{
     }
     .text>p{
         width: auto;
+    }
+    .Check{
+        width: 80px;
+        height: 40px;
+        font-size: 10px;
     }
 }

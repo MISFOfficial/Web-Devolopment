@@ -6,4 +6,8 @@ var typingEffect = new Typed(".auto-type",{
   backDelay : 2000
 })
 
+window.addEventListener("scroll", function(){
+  var header =document.querySelector("header");
+  header.classList.toggle("sticky", this.window.scrollY>0)
+})
 
