@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Stories</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fdeecd, #f8f9fa);
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #444;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+            flex: 1;
+        }
+
+        .card-content h3 {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .card-date {
+            background: #38b6ff;
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8rem;
+            text-align: center;
+            border-radius: 4px;
+            margin: 10px auto 0;
+            width: fit-content;
+        }
+
+        .view-all {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .view-all button {
+            background: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .view-all button:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Stories</h1>
+    <div class="container">
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150" alt="Story image">
+            <div class="card-content">
+                <h3>A fun toddler coloring training on classroom</h3>
+                <p>Exploring fun activities for toddlers in an inclusive environment.</p>
+                <div class="card-date">November 10, 2019</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150" alt="Story image">
+            <div class="card-content">
+                <h3>Find out if a school fits the family's needs</h3>
+                <p>Discover ways to align educational goals with family priorities.</p>
+                <div class="card-date">November 10, 2019</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150" alt="Story image">
+            <div class="card-content">
+                <h3>Summer math & literacy centers for kids</h3>
+                <p>Engaging kids in math and literacy activities during summer.</p>
+                <div class="card-date">November 10, 2019</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150" alt="Story image">
+            <div class="card-content">
+                <h3>Classroom management techniques for new tutors</h3>
+                <p>Learn effective methods to manage classrooms with ease.</p>
+                <div class="card-date">September 10, 2019</div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://via.placeholder.com/400x150" alt="Story image">
+            <div class="card-content">
+                <h3>Conversation rhymes improve kids' listening</h3>
+                <p>Using rhymes to enhance listening and interaction among children.</p>
+                <div class="card-date">July 15, 2019</div>
+            </div>
+        </div>
+    </div>
+    <div class="view-all">
+        <button>View All</button>
+    </div>
+</body>
+</html>
