@@ -1,5 +1,8 @@
-const name=['Jahin','mahin', 'yekin']
+const array = [1, 2, 3, 4, 5, 6, 7];
 
-for(const jahin of name){
-    console.log(jahin)
+for (let i = 1; i < array.length; i++) {
+ if (i == 5) {
+ continue;
+ }
+ console.log(array[i]);
 }
