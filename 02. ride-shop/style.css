@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap');
+
+body{
+    font-family: "Merriweather", serif;
+}
+
+.header-a1{
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 130px;
+    max-width: 130px;
+}
+.icon{
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+    gap: 30px;
+    align-items: center;
+}
+
+.nev-list{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    font-weight: 700;
+}
+.nev{
+    text-decoration: none;
+    color: black;
+    transition: .3s;
+}
+.nev:hover{
+    color: red;
+    transition: .3s;
+}
+
+.cover{
+    background-image: url(image/cover/blue.jpg);
+}
+.name{
+    text-align: center;
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    padding-top: 30px;
+}
+
+.cover-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-bottom: 30px;
+}
+.cover-link-title{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition: .3s;
+}
+
+.cover-link-title:hover{
+    color: rgb(255, 0, 0);
+    transition: .3s;
+}
+
+.main{
+    margin-top: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Categori{
+    font-weight: 700;
+    font-size: 34px;
+}
+.filter>div>h3{
+    font-weight: 300;
+    font-size: 18px;
+}
+.list{
+    font-weight: 300;
+    font-size: 12px;
+}
+.size{
+    display: flex;
+    gap: 10px;
+}
+
+.size .list{
+    background-color: white;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgb(182, 181, 181);
+    padding: 5px;
+}

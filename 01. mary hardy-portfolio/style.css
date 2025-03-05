@@ -1,0 +1,247 @@
+/*Font style*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Sevillana&display=swap');
+body{
+    font-family: 'Open Sans';
+    font-style: normal;
+}
+
+/*all button*/
+.btn-content{
+    background-color: #FD6E0A;
+    border-width: 0;
+    width: 200px;
+    height: 64px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+.btn-content:hover{
+    background-color: #b85813;
+    color: #ffffff;
+    transition: .5s;
+}
+
+
+/*navigation and logo*/
+
+.header{
+    background-image: url(image/header_bg.png);
+    background-repeat: no-repeat;
+    background-color: #FFF8F3;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-position: bottom right;
+}
+.navigation{
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: #FFF8F3;
+}
+header>div>h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+header>div>h1>span{
+    color: #FD6E0A;
+}
+.header-nav-list{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    gap: 60px;
+    align-items: center;
+}
+
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.banner-hi{
+    font-weight: 600;
+    font-size: 45px;
+}
+.banner-person-name{
+    font-weight: 700;
+    font-size: 85px;
+}
+.banner-person-paragraph{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*main section*/
+.main{
+    padding-right: 80px;
+    padding-left: 80px;
+    max-width: 1140px;
+    margin: 0 auto;
+
+}
+
+/*about section*/
+.about{
+    padding: 130px;
+    margin: 130px 0;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF8F3;
+    
+}
+.content-peragraph{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+.content-name{
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    align-items: center;
+
+}
+.contact{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.contact>div>p{
+    font-size: 20px;
+}
+.contact>div .peragraph{
+    font-weight: 800;
+}
+
+.contact-text{
+    font-size: 100;
+}
+
+/*work section*/
+.work{
+    align-items: center;
+    padding-bottom: 130px;
+}
+
+.work-name{
+    display: flex;
+    justify-content: space-around;
+}
+
+.work-div{
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    text-align: none;
+    width: 267px;
+    height: 377px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+}
+
+.work-div>p{
+    margin-left: 20px;
+}
+.work-title{
+    font-weight: 700;
+}
+.work-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    width: 201px;
+    height: 196px;
+}
+.work-icons{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 44px;
+    height: 44px;
+}
+
+/*<!--A summary of My Resume-->*/
+
+.resume-details{
+    display: flex;
+    justify-content: space-between;
+}
+.resume-title{
+    font-weight: 700;
+    font-size: 30px;
+    color: #474747;
+}
+
+.place{
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+}
+
+.head-title{
+    font-weight: 700;
+    font-size: 25px;
+    color: #474747;
+}
+
+.summary{
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+}
+.line{
+    border-left: 6px solid green;
+    width: 540px;
+    height: 0px;
+    border: 2px solid #D1D1D1;
+}
+
+.download-cv{
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF8F3;
+    padding-right: 270px;
+    padding-left: 270px;
+    padding-bottom: 100px;
+
+}
+.marge{
+    margin-top: 100px;
+    display: flex;
+}
+.footer-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+}
+.footer-paragraph{
+    font-weight: 400;
+    font-size: 16px;
+    width: 562px;
+    color: #474747;
+}
+
+.icons{
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+
+}
+
+input{
+    display: inline-block;
+    width: 461px;
+    height: 64px;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #efe6e6;
+    border-radius: 10px;
+}
+
+.massage{
+    height: 180px;
+}

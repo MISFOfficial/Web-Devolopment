@@ -1,0 +1,175 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=DynaPuff:wght@400..700&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300;400;700&family=Sevillana&display=swap');
+
+body{
+    background-image: url(https://images.pexels.com/photos/1323206/pexels-photo-1323206.jpeg?cs=srgb&dl=pexels-mixu-513809-1323206.jpg&fm=jpg);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    font-family: "Oxygen", sans-serif;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13vh;
+    backdrop-filter: blur(10px);
+}
+.header .logo{
+    margin-right: 100px;
+    font-size: 3vw;
+}
+.logo>i{
+    color: aquamarine;
+    transition-duration: .3s;
+}
+.logo>i:hover{
+    color: orange;
+    transition-duration: .3s;
+}
+
+.nev{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+.nev-bar{
+    display: flex;
+    gap: 30px;
+    margin-left: 500px;
+    
+}
+
+.navigation{
+    list-style: none;
+
+}
+.navigation>a{
+    text-decoration: none;
+    color: aquamarine;
+    transition: .5s;
+    font-size: large;
+    font-weight: 700;
+}
+.sign{
+   margin-left: 100px;
+}
+
+.navigation>a:hover{
+    color: rgb(251, 255, 0);
+    transition: .3s;
+}
+
+main{
+    justify-content: space-around;
+    color: white;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    
+}
+
+.login {
+    text-align: center;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.welcome { 
+font-size: 60px;
+font-weight: 800;
+}
+.login>p {
+padding-bottom: 50px;
+font-size: large;
+font-size: 15px;
+}
+
+.button {
+color: rgb(0, 0, 0);
+padding: 10px 20px;
+width: 10vw;
+height: 7vh;
+font-size: 16px;
+cursor: pointer;
+border: 0px;
+border-radius: 30px;
+background-color: aquamarine;
+font-weight: 600;
+transition: .3s;
+}
+
+button:hover{
+background-color: orange;
+border: 0px;
+font-weight: 600;
+transform: scale(1.1);
+transition: .3s;
+color: black;
+}
+
+
+.partision{
+background-color: aquamarine;
+width: 5px;
+height: 74vh;
+margin-right: 200px;
+border-radius: 50px;
+}
+
+.sign-dev{
+    text-align: center;
+}
+.create{
+    font-size: 60px;
+    font-weight: 800;
+}
+.icon{
+    font-size: 25px;
+    
+}
+.icon>a>i{
+   margin: 0 20px;
+   color: aquamarine;
+   transition: .3s;
+}
+
+.icon>a>i:hover{
+    color: orange;
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+.rg-text{
+    font-size: 15px;
+}
+.rg-text>span{
+    color: orange;
+}
+
+.input{
+    align-items: center;
+    height: 50px;
+    width: 18vw;
+    border: 0px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    margin-left: 76px;
+}
+
+::placeholder{
+    padding-left: 20px;
+}
+.sign-form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
