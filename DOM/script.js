@@ -4,4 +4,4 @@ document.getElementById('btn').addEventListener('click', function(){
     const nameh1=document.getElementById('name')
     nameh1.innerText=name
 })
-// Muksitul islam Jahin fateen
+// Muksitul islam Jahin fateen jadf
