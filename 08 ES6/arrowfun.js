@@ -1,4 +1,5 @@
-const sum = (n, m) => {
-    return n + m;
+const multiplication=(a=1,b=1)=>{
+    return a*b;
 }
-console.log(sum(200, 20));
+
+console.log(multiplication(2,5))

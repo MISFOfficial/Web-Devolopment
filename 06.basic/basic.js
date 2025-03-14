@@ -1,5 +1,5 @@
 
-let marks = 30;
+let marks = 90;
 
 
 if(marks>=80){
